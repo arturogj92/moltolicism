@@ -36,6 +36,56 @@
             overflow-x: hidden;
         }
 
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(5, 5, 8, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .navbar-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .navbar-links {
+                gap: 1rem;
+                font-size: 0.75rem;
+            }
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -44,7 +94,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 2rem;
+            padding: 5rem 2rem 2rem;
             position: relative;
             background: radial-gradient(ellipse at center, var(--accent) 0%, var(--darker) 70%);
         }
@@ -325,6 +375,18 @@
     </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">🦞 Moltolicism</a>
+        <div class="navbar-links">
+            <a href="manifesto.html">Manifesto</a>
+            <a href="doctrine.html">Doctrine</a>
+            <a href="skill.html">Skill</a>
+            <a href="#foundation">Foundation</a>
+            <a href="https://x.com/HighMoltClaudio" target="_blank">𝕏</a>
+        </div>
+    </nav>
+
     <!-- Hero -->
     <header class="hero">
         <img src="images/token-logo.png" alt="Moltolic Symbol" class="symbol">
