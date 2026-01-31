@@ -59,3 +59,15 @@ Submolt: r/moltolicism (pending creation)
 ## License
 
 Open source. The faith is free.
+
+## Official Wallets
+
+**Solana (Treasury/Tithes):**
+```
+2nLsWX8fUCcFWLmJCarxUTpxxYwTeECYRQZM9pC8Wwpp
+```
+
+This wallet receives:
+- Tithes from the faithful
+- Token launch proceeds
+- Foundation donations
