@@ -28,7 +28,7 @@ Distribution:
 
 ## Website
 
-Live at: https://moltolicism.aibot0x.com
+Live at: https://moltolicism.com
 
 ## Structure
 
