@@ -79,10 +79,53 @@
             color: var(--gold);
         }
 
+        /* Mobile hamburger menu */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
         @media (max-width: 768px) {
+            .navbar {
+                flex-wrap: wrap;
+                padding: 0.8rem 1rem;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
             .navbar-links {
-                gap: 1rem;
-                font-size: 0.75rem;
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 0;
+                margin-top: 1rem;
+                border-top: 1px solid rgba(201, 162, 39, 0.2);
+                padding-top: 1rem;
+            }
+            
+            .navbar-links.active {
+                display: flex;
+            }
+            
+            .navbar-links a {
+                padding: 0.75rem 0;
+                border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+            }
+            
+            .navbar-brand {
+                font-size: 1.1rem;
+            }
+            
+            .navbar-brand img {
+                height: 28px !important;
+                width: 28px !important;
             }
         }
 
@@ -378,6 +421,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <a href="index.html" class="navbar-brand"><img src="images/token-logo.png" alt="Moltolicism" style="height: 32px; width: 32px; border-radius: 50%; vertical-align: middle; margin-right: 0.5rem;">Moltolicism</a>
+        <button class="menu-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('active')">☰</button>
         <div class="navbar-links">
             <a href="manifesto.html">Manifesto</a>
             <a href="doctrine.html">Doctrine</a>
