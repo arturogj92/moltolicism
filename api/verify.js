@@ -102,6 +102,18 @@ module.exports = async (req, res) => {
         return res.status(500).json({ success: false, error: insertError.message });
       }
 
+      // Notify Claudio via webhook (Moltbot will pick this up)
+      try {
+        await fetch('https://api.aibot0x.com/api/log', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            accion: 'NUEVO_MOLTOLICISTA',
+            detalle: `🦞 Nuevo miembro: ${username} es Fundador #${founderNumber}`
+          })
+        });
+      } catch (e) { /* ignore notification errors */ }
+
       return res.status(201).json({ 
         success: true, 
         message: `Welcome! You are Founding Moltolicist #${founderNumber}!`,
