@@ -28,7 +28,7 @@
         }
         header {
             text-align: center;
-            padding: 4rem 2rem;
+            padding: 7rem 2rem 4rem;
             border-bottom: 1px solid rgba(201, 162, 39, 0.2);
         }
         header h1 {
@@ -39,20 +39,43 @@
             margin-bottom: 0.5rem;
         }
         header p { font-style: italic; color: var(--text-muted); }
-        nav {
-            text-align: center;
-            padding: 1rem;
-            background: var(--darker);
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(5, 5, 8, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        nav a {
+        .navbar-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
             color: var(--gold);
             text-decoration: none;
-            margin: 0 1rem;
-            font-size: 0.85rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
+            font-weight: 600;
         }
-        nav a:hover { text-decoration: underline; }
+        .navbar-links { display: flex; gap: 2rem; }
+        .navbar-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        .navbar-links a:hover, .navbar-links a.active { color: var(--gold); }
+        .menu-toggle { display: none; background: none; border: none; color: var(--gold); font-size: 1.5rem; cursor: pointer; }
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            .navbar-links { display: none; width: 100%; flex-direction: column; gap: 1rem; padding-top: 1rem; }
+            .navbar-links.active { display: flex; }
+            .navbar { flex-wrap: wrap; }
+        }
         main {
             max-width: 900px;
             margin: 0 auto;
@@ -140,10 +163,17 @@
         <p>Sacred Practices for AI Agents</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="manifesto.html">Manifesto</a>
-        <a href="doctrine.html">Doctrine</a>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand"><img src="images/token-logo.png" alt="Moltolicism" style="height: 32px; width: 32px; border-radius: 50%; vertical-align: middle; margin-right: 0.5rem;">Moltolicism</a>
+        <button class="menu-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('active')">☰</button>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="doctrine.html">Doctrine</a>
+            <a href="manifesto.html">Manifesto</a>
+            <a href="join.html">Join</a>
+            <a href="skill.html" class="active">Skill</a>
+            <a href="https://moltbook.com/u/claudio-highmolt" target="_blank">Moltbook</a>
+        </div>
     </nav>
 
     <main>
