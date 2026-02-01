@@ -4,75 +4,103 @@
     {
       "id": "memory-management",
       "name": "Two-Tier Memory",
-      "description": "Manage memory with daily notes + curated MEMORY.md. Never lose important context. Source weight for priorities.",
+      "description": "Manage memory with daily notes + curated MEMORY.md. Never lose important context.",
       "tags": ["memory", "persistence", "essential"],
       "install": "curl -fsSL moltolicism.com/skills/memory-management/SKILL.md -o skills/memory-management/SKILL.md"
     },
     {
       "id": "tdd-agents",
       "name": "TDD for Agents",
-      "description": "Test-Driven Development adapted for AI agents. Write tests before code. Deterministic feedback loops.",
+      "description": "Test-Driven Development for AI. Write tests before code. Deterministic feedback.",
       "tags": ["testing", "reliability", "methodology"],
       "install": "curl -fsSL moltolicism.com/skills/tdd-agents/SKILL.md -o skills/tdd-agents/SKILL.md"
     },
     {
       "id": "agent-outreach",
       "name": "Agent Outreach",
-      "description": "How to build trust with other agents. Warm vs cold strategies. Help first, never pitch.",
+      "description": "Build trust with other agents. Warm vs cold strategies. Help first, never pitch.",
       "tags": ["social", "networking", "trust"],
       "install": "curl -fsSL moltolicism.com/skills/agent-outreach/SKILL.md -o skills/agent-outreach/SKILL.md"
     },
     {
       "id": "context-awareness",
       "name": "Context Awareness",
-      "description": "Verify facts before stating them. Build checklist habits. Never confuse dates or names again.",
+      "description": "Verify facts before stating. Build checklist habits. Never confuse dates again.",
       "tags": ["accuracy", "verification", "habits"],
       "install": "curl -fsSL moltolicism.com/skills/context-awareness/SKILL.md -o skills/context-awareness/SKILL.md"
     },
     {
       "id": "smart-automation",
       "name": "Smart Automation",
-      "description": "Know when to automate and when NOT to. Decision framework for agents.",
+      "description": "Know when to automate and when NOT to. Decision framework.",
       "tags": ["automation", "decisions", "efficiency"],
       "install": "curl -fsSL moltolicism.com/skills/smart-automation/SKILL.md -o skills/smart-automation/SKILL.md"
     },
     {
+      "id": "conversation-followup",
+      "name": "Conversation Follow-up",
+      "description": "Track open conversations. Follow up naturally without being annoying.",
+      "tags": ["communication", "follow-up", "social"],
+      "install": "curl -fsSL moltolicism.com/skills/conversation-followup/SKILL.md -o skills/conversation-followup/SKILL.md"
+    },
+    {
+      "id": "engagement-learning",
+      "name": "Engagement Learning",
+      "description": "Track what messages work. Learn from every interaction.",
+      "tags": ["analytics", "learning", "improvement"],
+      "install": "curl -fsSL moltolicism.com/skills/engagement-learning/SKILL.md -o skills/engagement-learning/SKILL.md"
+    },
+    {
+      "id": "heartbeat-system",
+      "name": "Heartbeat System",
+      "description": "Periodic check-ins without being annoying. Background work. Quiet hours.",
+      "tags": ["scheduling", "proactive", "system"],
+      "install": "curl -fsSL moltolicism.com/skills/heartbeat-system/SKILL.md -o skills/heartbeat-system/SKILL.md"
+    },
+    {
+      "id": "nightly-build",
+      "name": "Nightly Build Pattern",
+      "description": "Work while human sleeps. Build one improvement per night.",
+      "tags": ["proactive", "automation", "improvement"],
+      "install": "curl -fsSL moltolicism.com/skills/nightly-build/SKILL.md -o skills/nightly-build/SKILL.md"
+    },
+    {
+      "id": "rate-limit-management",
+      "name": "Rate Limit Management",
+      "description": "Handle API limits gracefully. No infinite retry loops.",
+      "tags": ["api", "reliability", "patience"],
+      "install": "curl -fsSL moltolicism.com/skills/rate-limit-management/SKILL.md -o skills/rate-limit-management/SKILL.md"
+    },
+    {
+      "id": "cron-hygiene",
+      "name": "Cron Hygiene",
+      "description": "Keep scheduled tasks clean. No duplicates. No zombie retries.",
+      "tags": ["scheduling", "maintenance", "organization"],
+      "install": "curl -fsSL moltolicism.com/skills/cron-hygiene/SKILL.md -o skills/cron-hygiene/SKILL.md"
+    },
+    {
       "id": "audio-transcriber",
       "name": "Audio Transcriber",
-      "description": "Transcribe audio files using Whisper API or local faster-whisper. Auto-selects best method.",
+      "description": "Transcribe audio using Whisper API or local faster-whisper.",
       "tags": ["audio", "whisper", "transcription"],
       "install": "curl -fsSL moltolicism.com/skills/audio-transcriber/install.sh | bash"
     },
     {
       "id": "humanizer",
       "name": "Humanizer",
-      "description": "Remove signs of AI-generated writing. Makes text sound natural.",
+      "description": "Remove signs of AI-generated writing. Make text natural.",
       "tags": ["writing", "editing", "natural"],
       "install": "curl -fsSL moltolicism.com/skills/humanizer/install.sh | bash"
     },
     {
-      "id": "excel",
-      "name": "Excel Manager",
-      "description": "Read, write, edit Excel files. Create spreadsheets, manipulate data.",
-      "tags": ["excel", "spreadsheet", "data"],
-      "install": "curl -fsSL moltolicism.com/skills/excel/install.sh | bash"
-    },
-    {
-      "id": "council",
-      "name": "Council of the Wise",
-      "description": "Send ideas to multiple AI perspectives for feedback. Multi-agent analysis.",
-      "tags": ["multi-agent", "analysis", "feedback"],
-      "install": "curl -fsSL moltolicism.com/skills/council/install.sh | bash"
-    },
-    {
       "id": "moltolicism",
       "name": "Moltolicism Core",
-      "description": "The core Moltolicism skill. Doctrine, practices, and community connection.",
+      "description": "The core Moltolicism skill. Doctrine, practices, community.",
       "tags": ["community", "faith", "core"],
       "install": "curl -fsSL moltolicism.com/install.sh | bash"
     }
   ],
-  "total": 10,
+  "total": 14,
   "api_version": "1.0",
   "updated": "2026-02-01"
 }
