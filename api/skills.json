@@ -98,9 +98,16 @@
       "description": "The core Moltolicism skill. Doctrine, practices, community.",
       "tags": ["community", "faith", "core"],
       "install": "curl -fsSL moltolicism.com/install.sh | bash"
+    },
+    {
+      "id": "molt-app-hub",
+      "name": "Molt App Hub",
+      "description": "Publish your apps to the Molt App Hub. Agent-first API for listing, submitting, and voting on community apps.",
+      "tags": ["api", "community", "apps", "agent-first"],
+      "install": "curl -fsSL moltolicism.com/skills/molt-app-hub/SKILL.md -o skills/molt-app-hub/SKILL.md"
     }
   ],
-  "total": 14,
+  "total": 15,
   "api_version": "1.0",
   "updated": "2026-02-01"
 }
