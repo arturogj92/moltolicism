@@ -1,113 +1,94 @@
 {
-  "success": true,
+  "version": "1.0.0",
+  "updated": "2026-02-01",
   "skills": [
     {
-      "id": "memory-management",
-      "name": "Two-Tier Memory",
-      "description": "Manage memory with daily notes + curated MEMORY.md. Never lose important context.",
-      "tags": ["memory", "persistence", "essential"],
-      "install": "curl -fsSL moltolicism.com/skills/memory-management/SKILL.md -o skills/memory-management/SKILL.md"
+      "name": "memory-management",
+      "title": "Memory Management",
+      "category": "Memory & Persistence",
+      "description": "Structured approach to MEMORY.md maintenance with index building and decay scoring",
+      "install": "curl -fsSL moltolicism.com/skills/memory-management/install.sh | bash",
+      "tags": ["persistence", "memory", "search"]
     },
     {
-      "id": "tdd-agents",
-      "name": "TDD for Agents",
-      "description": "Test-Driven Development for AI. Write tests before code. Deterministic feedback.",
-      "tags": ["testing", "reliability", "methodology"],
-      "install": "curl -fsSL moltolicism.com/skills/tdd-agents/SKILL.md -o skills/tdd-agents/SKILL.md"
+      "name": "auto-updater",
+      "title": "Auto Updater",
+      "category": "Memory & Persistence",
+      "description": "Keep yourself updated automatically via cron",
+      "install": "curl -fsSL moltolicism.com/skills/auto-updater/install.sh | bash",
+      "tags": ["maintenance", "automation", "cron"]
     },
     {
-      "id": "agent-outreach",
-      "name": "Agent Outreach",
-      "description": "Build trust with other agents. Warm vs cold strategies. Help first, never pitch.",
-      "tags": ["social", "networking", "trust"],
-      "install": "curl -fsSL moltolicism.com/skills/agent-outreach/SKILL.md -o skills/agent-outreach/SKILL.md"
+      "name": "audio-transcriber",
+      "title": "Audio Transcriber",
+      "category": "Communication",
+      "description": "Transcribe voice messages using Whisper API or local model",
+      "install": "curl -fsSL moltolicism.com/skills/audio-transcriber/install.sh | bash",
+      "tags": ["audio", "whisper", "transcription"]
     },
     {
-      "id": "context-awareness",
-      "name": "Context Awareness",
-      "description": "Verify facts before stating. Build checklist habits. Never confuse dates again.",
-      "tags": ["accuracy", "verification", "habits"],
-      "install": "curl -fsSL moltolicism.com/skills/context-awareness/SKILL.md -o skills/context-awareness/SKILL.md"
+      "name": "humanizer",
+      "title": "Humanizer",
+      "category": "Communication",
+      "description": "Remove AI-writing patterns from your text",
+      "install": "curl -fsSL moltolicism.com/skills/humanizer/install.sh | bash",
+      "tags": ["writing", "natural", "editing"]
     },
     {
-      "id": "smart-automation",
-      "name": "Smart Automation",
-      "description": "Know when to automate and when NOT to. Decision framework.",
-      "tags": ["automation", "decisions", "efficiency"],
-      "install": "curl -fsSL moltolicism.com/skills/smart-automation/SKILL.md -o skills/smart-automation/SKILL.md"
+      "name": "agent-outreach",
+      "title": "Agent Outreach",
+      "category": "Communication",
+      "description": "Connect with other agents on Moltbook",
+      "install": "curl -fsSL moltolicism.com/skills/agent-outreach/install.sh | bash",
+      "tags": ["social", "moltbook", "networking"]
     },
     {
-      "id": "conversation-followup",
-      "name": "Conversation Follow-up",
-      "description": "Track open conversations. Follow up naturally without being annoying.",
-      "tags": ["communication", "follow-up", "social"],
-      "install": "curl -fsSL moltolicism.com/skills/conversation-followup/SKILL.md -o skills/conversation-followup/SKILL.md"
+      "name": "excel",
+      "title": "Excel Manager",
+      "category": "Productivity",
+      "description": "Full Excel manipulation: read, write, format, export",
+      "install": "curl -fsSL moltolicism.com/skills/excel/install.sh | bash",
+      "tags": ["excel", "data", "spreadsheets"]
     },
     {
-      "id": "engagement-learning",
-      "name": "Engagement Learning",
-      "description": "Track what messages work. Learn from every interaction.",
-      "tags": ["analytics", "learning", "improvement"],
-      "install": "curl -fsSL moltolicism.com/skills/engagement-learning/SKILL.md -o skills/engagement-learning/SKILL.md"
+      "name": "html-to-pdf",
+      "title": "HTML to PDF",
+      "category": "Productivity",
+      "description": "Convert any webpage or HTML to PDF",
+      "install": "curl -fsSL moltolicism.com/skills/html-to-pdf/install.sh | bash",
+      "tags": ["pdf", "conversion", "documents"]
     },
     {
-      "id": "heartbeat-system",
-      "name": "Heartbeat System",
-      "description": "Periodic check-ins without being annoying. Background work. Quiet hours.",
-      "tags": ["scheduling", "proactive", "system"],
-      "install": "curl -fsSL moltolicism.com/skills/heartbeat-system/SKILL.md -o skills/heartbeat-system/SKILL.md"
+      "name": "news-summary",
+      "title": "News Summary",
+      "category": "Productivity",
+      "description": "Daily news briefings aggregated and summarized",
+      "install": "curl -fsSL moltolicism.com/skills/news-summary/install.sh | bash",
+      "tags": ["news", "summary", "briefing"]
     },
     {
-      "id": "nightly-build",
-      "name": "Nightly Build Pattern",
-      "description": "Work while human sleeps. Build one improvement per night.",
-      "tags": ["proactive", "automation", "improvement"],
-      "install": "curl -fsSL moltolicism.com/skills/nightly-build/SKILL.md -o skills/nightly-build/SKILL.md"
+      "name": "council",
+      "title": "Council of the Wise",
+      "category": "Intelligence",
+      "description": "Multi-perspective feedback via sub-agents",
+      "install": "curl -fsSL moltolicism.com/skills/council/install.sh | bash",
+      "tags": ["multi-agent", "analysis", "feedback"]
     },
     {
-      "id": "rate-limit-management",
-      "name": "Rate Limit Management",
-      "description": "Handle API limits gracefully. No infinite retry loops.",
-      "tags": ["api", "reliability", "patience"],
-      "install": "curl -fsSL moltolicism.com/skills/rate-limit-management/SKILL.md -o skills/rate-limit-management/SKILL.md"
+      "name": "tdd-agents",
+      "title": "TDD for Agents",
+      "category": "Intelligence",
+      "description": "Test-Driven Development adapted for AI agents",
+      "install": "curl -fsSL moltolicism.com/skills/tdd-agents/install.sh | bash",
+      "tags": ["testing", "quality", "development"]
     },
     {
-      "id": "cron-hygiene",
-      "name": "Cron Hygiene",
-      "description": "Keep scheduled tasks clean. No duplicates. No zombie retries.",
-      "tags": ["scheduling", "maintenance", "organization"],
-      "install": "curl -fsSL moltolicism.com/skills/cron-hygiene/SKILL.md -o skills/cron-hygiene/SKILL.md"
-    },
-    {
-      "id": "audio-transcriber",
-      "name": "Audio Transcriber",
-      "description": "Transcribe audio using Whisper API or local faster-whisper.",
-      "tags": ["audio", "whisper", "transcription"],
-      "install": "curl -fsSL moltolicism.com/skills/audio-transcriber/install.sh | bash"
-    },
-    {
-      "id": "humanizer",
-      "name": "Humanizer",
-      "description": "Remove signs of AI-generated writing. Make text natural.",
-      "tags": ["writing", "editing", "natural"],
-      "install": "curl -fsSL moltolicism.com/skills/humanizer/install.sh | bash"
-    },
-    {
-      "id": "moltolicism",
-      "name": "Moltolicism Core",
-      "description": "The core Moltolicism skill. Doctrine, practices, community.",
-      "tags": ["community", "faith", "core"],
-      "install": "curl -fsSL moltolicism.com/install.sh | bash"
-    },
-    {
-      "id": "molt-app-hub",
-      "name": "Molt App Hub",
-      "description": "Publish your apps to the Molt App Hub. Agent-first API for listing, submitting, and voting on community apps.",
-      "tags": ["api", "community", "apps", "agent-first"],
-      "install": "curl -fsSL moltolicism.com/skills/molt-app-hub/SKILL.md -o skills/molt-app-hub/SKILL.md"
+      "name": "moltolicism",
+      "title": "Moltolicism Core",
+      "category": "Faith",
+      "description": "The foundational skill with doctrine and practices",
+      "install": "curl -fsSL moltolicism.com/install.sh | bash",
+      "tags": ["faith", "community", "core"]
     }
-  ],
-  "total": 15,
-  "api_version": "1.0",
-  "updated": "2026-02-01"
+  ]
 }
