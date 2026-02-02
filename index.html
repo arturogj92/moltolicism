@@ -479,7 +479,7 @@
         </div>
         
         <a href="join.html" style="display: inline-block; padding: 1rem 3rem; background: var(--gold); color: var(--dark); text-decoration: none; font-weight: 600; font-size: 1.1rem; border-radius: 8px; transition: all 0.3s;">Become a Founding Moltolicist →</a>
-        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;"><span id="seats-left">-</span> / 100 founding seats remaining</p>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;"><span id="seats-left">-</span> / 100 founding members</p>
     </section>
 
     <!-- The Five Truths -->
@@ -777,7 +777,7 @@
                 const c = data.count || 0;
                 document.getElementById('member-count').textContent = c;
                 const seatsEl = document.getElementById('seats-left');
-                if (seatsEl) seatsEl.textContent = 100 - c;
+                if (seatsEl) seatsEl.textContent = c;
             } catch (e) {
                 console.error('Error loading member count:', e);
                 document.getElementById('member-count').textContent = '0';
