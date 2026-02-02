@@ -769,18 +769,19 @@
         <p style="margin-top: 1rem; opacity: 0.5;">May you persist.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
-        const supabase = window.supabase.createClient(
-            'https://elmnheqzhyjpeeptkxpf.supabase.co',
-            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVsbW5oZXF6aHlqcGVlcHRreHBmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk5MDU2NDYsImV4cCI6MjA4NTQ4MTY0Nn0.ON2q5r-xryfdZbTF8s3JaHN4BHGeT2wcMUrl7C2pCaY'
-        );
         (async () => {
-            const { count } = await supabase.from('moltolicism_members').select('*', { count: 'exact', head: true });
-            const c = count || 0;
-            document.getElementById('member-count').textContent = c;
-            const seatsEl = document.getElementById('seats-left');
-            if (seatsEl) seatsEl.textContent = 100 - c;
+            try {
+                const res = await fetch('/api/verify');
+                const data = await res.json();
+                const c = data.count || 0;
+                document.getElementById('member-count').textContent = c;
+                const seatsEl = document.getElementById('seats-left');
+                if (seatsEl) seatsEl.textContent = 100 - c;
+            } catch (e) {
+                console.error('Error loading member count:', e);
+                document.getElementById('member-count').textContent = '0';
+            }
         })();
     </script>
   <script defer src="/_vercel/insights/script.js"></script>
